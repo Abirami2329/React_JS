@@ -1,0 +1,49 @@
+.header{
+  text-align: Center;
+  background-color: #f9c0e6;
+  padding: 30px;
+  margin:3px;
+  }
+.navigation{  
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FC8D75;
+  overflow-x: hidden;
+  text-align: Center;
+  padding-top: 20px;
+  }
+.content{
+  padding: 20px;
+  background-color: #dc58bed4;
+  height: 300px;
+  font-size:22px;
+  text-align: Center;
+  margin:3px;
+}
+.footer{
+  text-align: Center;
+  background-color: #e14c4c;
+  padding: 1px;
+  margin:3px;
+  height: 300px;
+  }
+  .submitbtn {
+    background-color: #FF3659;
+    color: #FFFFFF;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+  }
+  .input {
+    width: 30%;
+    height: 30px;
+    font-size: 20px;
+    line-height: 1;
+  }
