@@ -1,9 +1,8 @@
 import React from "react";
 import "../index.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 function SideBar() {
   const elementValue = useSelector((state) => state);
-  const dispatch = useDispatch();
   return (
     <div>
       <nav id = 'sideBar' className="navigation">
