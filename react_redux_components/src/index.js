@@ -31,7 +31,7 @@ const elementReducer = (state = initialState, action) => {
       };
   } else {
       return state;
-  };
+  }
 };
 
 const store = createStore(elementReducer);
