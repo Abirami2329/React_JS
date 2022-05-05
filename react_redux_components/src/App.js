@@ -18,11 +18,10 @@ function Components() {
           <section>
             <nav className="navigation">
               <h2>SIDE BAR</h2>
-              <p>{elementValue}</p>
             </nav>
             <article className="content">
               <h1>CONTENT</h1>
-              <input id = 'name' className = 'input' ></input><br></br>
+              <input id = 'name' className = 'input' placeholder = 'Enter a Name'></input><br></br>
               <button className = 'submitbtn' onClick ={() => dispatch(getElementValue())} >SUBMIT</button>
             </article>
           </section>
