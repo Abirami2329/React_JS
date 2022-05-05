@@ -17,13 +17,11 @@ const initialState = {
   sideBarClass: "",
 };
 const elementReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "getValue":
+  if (action.type === "getValue") {
       const Values = document.querySelectorAll("h2");
       Values.forEach((element) => {
         element.textContent = "";
       });
-      console.log(state);
       return {
         value: document.getElementById("name").value,
         setSideBarOne: "HOME",
@@ -31,9 +29,9 @@ const elementReducer = (state = initialState, action) => {
         setSideBarThree: "ABOUT",
         sideBarClass: "sideBarButton",
       };
-    default:
+  } else {
       return state;
-  }
+  };
 };
 
 const store = createStore(elementReducer);
