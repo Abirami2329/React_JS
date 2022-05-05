@@ -50,7 +50,7 @@ function MyForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (
+    if ( 
       inputs.username &&
       inputs.age &&
       inputs.mobile &&
@@ -58,8 +58,9 @@ function MyForm() {
       inputs.address
     ) {
       alert("You have submitted the form.");
+    } else {
+      alert("Please Enter All Details");
     }
-    alert("Please Enter All Details");
   };
 
   return (
