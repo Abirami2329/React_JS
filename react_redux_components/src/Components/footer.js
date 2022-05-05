@@ -3,7 +3,6 @@ import "../index.css";
 import { useSelector } from "react-redux";
 function Footer() {
   const elementValue = useSelector((state) => state);
-  console.log(useSelector((state) => state));
   return (
     <div id="Footer">
       <footer className="footer">
