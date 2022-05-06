@@ -11,10 +11,10 @@ import { Provider } from "react-redux";
 export const getElementValue = () => ({ type: "getValue" });
 const initialState = {
   value: "",
-  setSideBarOne: "",
-  setSideBarTwo: "",
-  setSideBarThree: "",
-  sideBarClass: "",
+  setSideBarOne: "HOME",
+  setSideBarTwo: "CONTACT US",
+  setSideBarThree: "ABOUT",
+  sideBarClass: "sideBarButton",
 };
 const elementReducer = (state = initialState, action) => {
   if (action.type === "getValue") {
@@ -23,11 +23,8 @@ const elementReducer = (state = initialState, action) => {
         element.textContent = "";
       });
       return {
-        value: document.getElementById("name").value,
-        setSideBarOne: "HOME",
-        setSideBarTwo: "CONTACT US",
-        setSideBarThree: "ABOUT",
-        sideBarClass: "sideBarButton",
+        ...state,
+        value: document.getElementById("name").value
       };
   } else {
       return state;
