@@ -12,8 +12,7 @@ function Content() {
         <br></br>
         <button
           className="submitbtn"
-          onClick={() => dispatch(getElementValue())}
-        >
+          onClick={() => dispatch(getElementValue())} >
           SUBMIT
         </button>
       </article>
