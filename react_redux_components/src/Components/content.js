@@ -14,7 +14,7 @@ function Content() {
           className="submitbtn"
           onClick={() => dispatch(getElementValue())}
         >
-          SUBMIT{" "}
+          SUBMIT
         </button>
       </article>
     </div>
