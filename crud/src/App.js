@@ -29,7 +29,7 @@ function App() {
             sx={{ mr: 2 }} >
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          CRUD OPERATIONS
+            <b> CRUD OPERATIONS </b>
           </Typography>
           
         </Toolbar>
@@ -60,12 +60,12 @@ function App() {
           />
           <br></br>
           <FormControl>
-          <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
+          <FormLabel id="demo-radio-buttons-group-label">Price</FormLabel>
          <RadioGroup aria-labelledby="demo-radio-buttons-group-label"
           name="radio-buttons-group" >
-          <FormControlLabel value="female" control={<Radio />} label="Female" />
-          <FormControlLabel value="male" control={<Radio />} label="Male" />
-         <FormControlLabel value="other" control={<Radio />} label="Other" />
+          <FormControlLabel value="less" control={<Radio />} label="Below 10,000" />
+          <FormControlLabel value="medium" control={<Radio />} label="10,000 - 25,000" />
+          <FormControlLabel value="high" control={<Radio />} label="Above 25,000" />
         </RadioGroup>
         </FormControl>
         <br></br>
