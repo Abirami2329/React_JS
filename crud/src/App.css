@@ -1,0 +1,10 @@
+.App {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  width: fit-content;
+}
+.card {
+  padding: 20%;
+}
