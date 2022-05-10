@@ -95,6 +95,8 @@ function App() {
                   id="author"
                   label="Author"
                   color="secondary"
+                  value={values.author || ""}
+                  onChange={getElementValue}
                 />
               </div>
               <div>
